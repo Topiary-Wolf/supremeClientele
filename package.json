@@ -4,7 +4,7 @@
   "description": "The basics for creating small front end focused web apps.",
   "main": "./src/index.js",
   "scripts": {
-    "dev": "NODE_ENV=development NODE_OPTIONS=openssl-legacy-provider webpack-dev-server --hot --mode development --open --host 0.0.0.0",
+    "dev": "NODE_ENV=development NODE_OPTIONS=openssl-legacy-provider webpack-dev-server --hot --mode development --open",
     "deploy": "webpack --mode production --config prod.webpack.config.js"
   },
   "license": "ISC",
@@ -34,6 +34,9 @@
   "dependencies": {
     "@babel/core": "^7.19.0",
     "@babel/preset-env": "^7.19.0",
-    "babel-loader": "^8.2.5"
+    "@babel/preset-react": "^7.27.1",
+    "babel-loader": "^8.2.5",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
   }
 }
