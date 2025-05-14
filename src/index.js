@@ -1,6 +1,11 @@
 import './index.scss';
 
-const headerTag = document.createElement('h2');
+import React from 'react';
+import ReactDOM from 'react-dom/client';
 
-headerTag.innerText = '<~*! Raised Garden Bed !*~>';
-document.body.appendChild(headerTag);
+const App = () => {
+    return <h1>Nutmeg</h1>;
+};
+
+const root = ReactDOM.createRoot(document.getElementById('GhostFaceKillah'));
+root.render(<App />);
